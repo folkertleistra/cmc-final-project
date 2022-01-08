@@ -1,0 +1,33 @@
+TODO for the final project of CMC
+
+
+- Query top 100 twitch streams and all their viewers
+- Remove duplicate viewers from this data
+- Result: obtain list of streamers and their unique viewers
+- Uitzoeken hoe de data in gephi eruit moet zien
+- Medium artikel: Streamers vergelijken qua viewers en overlap wegschrijven naar een dictionary.
+- - Deze dictionary was gebruikt als input voor gephi
+
+
+- bedenken hoe ik de data wil opslaan
+## optie 1:
+dataframe met daarin viewers en streamers
+## optie 2:
+dictionary met voor elke streamer de unieke viewers --> converteren naar json
+
+{
+ streamer: {viewers: set(),
+            languages: set(),
+            games: set()
+            }
+}
+
+dan overlap zoeken in viewers tussen streamers
+de unieke viewers van streamers die een overlap hebben van meer dan 300 viewers
+ met een ieder andere streamer worden meegenomen in de gephi graph.
+
+de graph bevat dan alleen streamers met viewers die ook naar andere streamers
+kijken
+
+vergelijking kan met set intersection -> len -> if len > benchmark -> hou deze
+viewers en voeg ze toe aan de uiteindelijke dataset

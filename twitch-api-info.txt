@@ -1,0 +1,19 @@
+### Twitch API Credentials ###
+Client ID: r302hx3wf9a3fj481d3qqq47fik7g4
+Client Secret: pl3rdjodfmmdij7aainbondok98ctn
+App Access Token: p43f4krhtrvh7w68wg2oecrty5t6jw
+
+
+### Command to obtain current active streams ###
+# Taken from: https://dev.twitch.tv/docs/api/reference#get-streams
+curl -X GET 'https://api.twitch.tv/helix/streams' \
+-H 'Authorization: Bearer p43f4krhtrvh7w68wg2oecrty5t6jw' \
+-H 'Client-Id: r302hx3wf9a3fj481d3qqq47fik7g4'
+
+### Method of achieving chatters ###
+# Call the following endpoint: https://tmi.twitch.tv/group/user/channel/chatters
+# Example: https://tmi.twitch.tv/group/user/ibai/chatters
+# ibai was taken from the get request of active streams and taking the user_name key
+
+This post explains in detail the problems with this approach: https://discuss.dev.twitch.tv/t/current-viewers-information/27961
+Unfortunately for now, this is the only approach.
