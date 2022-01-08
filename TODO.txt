@@ -31,3 +31,11 @@ kijken
 
 vergelijking kan met set intersection -> len -> if len > benchmark -> hou deze
 viewers en voeg ze toe aan de uiteindelijke dataset
+
+
+## TODO as of 8 jan
+-> per streamer lijst met chatters (set en hier steeds aan added)
+-> blijven opslaan gedurende 9 en 10 jan
+-> 11 jan filteren en overlap zoeken
+-> omschrijven naar gephi file en visualiseren
+-> report maken
