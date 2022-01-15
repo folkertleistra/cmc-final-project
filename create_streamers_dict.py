@@ -7,5 +7,5 @@ def create():
         pickle.dump(streamer_dict, fp, protocol=pickle.HIGHEST_PROTOCOL)
 
     print('Creatin runtime log')
-    with open('runtime_log.txt', 'w') as f:
+    with open('logging/runtime_log.txt', 'w') as f:
         f.write('Creation of runtime Log')

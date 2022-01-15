@@ -2,8 +2,6 @@
 
 import requests
 
-
-
 def chatters_endpoint(channel):
     """
     Function used to obtain the chatters for a twitch stream

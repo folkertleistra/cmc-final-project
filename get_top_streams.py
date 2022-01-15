@@ -12,10 +12,10 @@ def run_scraper():
     currentDT = datetime.datetime.now()
     print(str(currentDT))
 
-    with open('unique_streamers.txt', 'w') as f:
+    with open('logging/unique_streamers.txt', 'w') as f:
         f.write(str(set(' ')))
 
-    with open('unique_streamers.txt', 'r') as f:
+    with open('logging/unique_streamers.txt', 'r') as f:
         streamers = eval(f.read())
 
 
@@ -33,6 +33,7 @@ def run_scraper():
         create()
 
     with open('streamers_dict.p', 'rb') as fp:
+        #TODO: fututr work store all data into seperate files, this method has potential risks.
         streamer_dict = pickle.load(fp)
 
 
@@ -89,7 +90,7 @@ def run_scraper():
 
 
 
-    with open('unique_streamers.txt', 'w') as f:
+    with open('logging/unique_streamers.txt', 'w') as f:
         streamers.remove(' ')
         f.write(str(streamers))
 
@@ -97,7 +98,7 @@ def run_scraper():
     with open('streamers_dict.p', 'wb') as fp:
         pickle.dump(streamer_dict, fp, protocol=pickle.HIGHEST_PROTOCOL)
 
-    with open('runtime_log.txt', 'a') as f:
+    with open('logging/runtime_log.txt', 'a') as f:
         f.write(f'\nCompleted runtime at {currentDT} \n')
         if error_seen:
             f.write(f'Encountered error: {error} \n')

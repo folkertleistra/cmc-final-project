@@ -10,7 +10,7 @@ nodes_to_check = set()
 
 filtered_data = defaultdict(set)
 
-with open('data/streamers_dict.p', 'rb') as fp:
+with open('../data/streamers_dict.p', 'rb') as fp:
     data = pickle.load(fp)
 
 users = list(data.keys())
