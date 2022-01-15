@@ -22,6 +22,7 @@ Computer Mediated Communication 2022 (RUG) (LIX022M05)
 
 ### Please Note:
 - The program will not work without your own Twitch API credentials see (https://dev.twitch.tv/docs/api/)
-- get_top_streams.py has a potential risk. For better safety and error handling, write all new collected data to seperate files, instead of appending to one data file.
+- Make sure to add these credentials into a json file called: credentials.json
+- get_top_streams.py has a potential risk. For better safety and error handling, write all new collected data to separate files, instead of appending to one data file.
 
 

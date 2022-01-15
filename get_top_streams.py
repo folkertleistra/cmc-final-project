@@ -4,7 +4,7 @@ import requests
 from get_channel_chatters import chatters_endpoint
 import pickle
 from create_streamers_dict import create
-import time
+import json
 import datetime
 
 def run_scraper():
@@ -36,10 +36,11 @@ def run_scraper():
         #TODO: fututr work store all data into seperate files, this method has potential risks.
         streamer_dict = pickle.load(fp)
 
+    with open('credentials.json.json') as f:
+        credentials = json.load(f)
 
-
-    headers = {'Authorization': 'Bearer p43f4krhtrvh7w68wg2oecrty5t6jw',
-              'Client-Id': 'r302hx3wf9a3fj481d3qqq47fik7g4'}
+    headers = {'Authorization': credentials['Authorization'],
+              'Client-Id': credentials['Client-Id']}
 
     params = {'first': str(top_n)}
 
