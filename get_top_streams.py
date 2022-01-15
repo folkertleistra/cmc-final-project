@@ -37,6 +37,7 @@ def run_scraper():
         streamer_dict = pickle.load(fp)
 
 
+
     headers = {'Authorization': 'Bearer p43f4krhtrvh7w68wg2oecrty5t6jw',
               'Client-Id': 'r302hx3wf9a3fj481d3qqq47fik7g4'}
 

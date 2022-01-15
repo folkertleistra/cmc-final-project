@@ -1,4 +1,7 @@
 venv
 .idea
-data
+data/streamers_dict.p
+data/twitch-gephi-data-nodes_list.csv
+data/twitch-gephi-data_edges_list.csv
 credentials-info.txt
+credentials.json
