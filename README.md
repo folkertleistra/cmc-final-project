@@ -1,6 +1,8 @@
 # cmc-final-project
 Welcome to our GitHub Repository!
 
+![My image](graph%20visualizations/fruchterman_reingold.svg)
+
 This repository contains the code used for our Twitch analysis for the course 
 Computer Mediated Communication 2022 (RUG) (LIX022M05)
 
