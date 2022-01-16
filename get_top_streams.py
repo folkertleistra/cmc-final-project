@@ -36,7 +36,7 @@ def run_scraper():
         #TODO: fututr work store all data into seperate files, this method has potential risks.
         streamer_dict = pickle.load(fp)
 
-    with open('credentials.json.json') as f:
+    with open('credentials.json') as f:
         credentials = json.load(f)
 
     headers = {'Authorization': credentials['Authorization'],
